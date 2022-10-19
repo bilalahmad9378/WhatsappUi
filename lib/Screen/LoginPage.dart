@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsappagain/CustomeWidget/ScreenWidget/LoginPage/textfield.dart';
 import 'package:whatsappagain/Screen/chatscreen.dart';
 // ignore: depend_on_referenced_packages
 // import 'package:flutter_chat_ui/screens/home_screen.dart';
@@ -29,7 +30,7 @@ class LoginPage extends StatelessWidget {
                       size: 80,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   const Padding(
@@ -42,49 +43,16 @@ class LoginPage extends StatelessWidget {
                           fontWeight: FontWeight.bold),
                     ),
                   ),
-                  SizedBox(
-                    height: 20,
-                  ),
                   const SizedBox(
                     height: 20,
                   ),
-                  TextFormField(
-                      style: TextStyle(color: Colors.white),
-                      decoration: const InputDecoration(
-                        hintText: 'Enter Email',
-                        labelText: 'Email',
-                        labelStyle: TextStyle(color: Colors.white),
-                        hintStyle: TextStyle(color: Colors.white),
-                        focusedBorder: OutlineInputBorder(
-                            borderSide:
-                                BorderSide(width: 2, color: Colors.white),
-                            borderRadius:
-                                BorderRadius.all(Radius.circular(20))),
-                      )),
+                  textfield(),
                   const SizedBox(
                     height: 10,
                   ),
-                  TextFormField(
-                    style: TextStyle(color: Colors.white),
-                    decoration: const InputDecoration(
-                        hintText: 'Enter Password',
-                        labelText: 'Password',
-                        labelStyle: TextStyle(color: Colors.white),
-                        hintStyle: TextStyle(color: Colors.white),
-                        focusedBorder: OutlineInputBorder(
-                            borderSide: BorderSide(
-                              width: 2,
-                              color: Colors.white,
-                            ),
-                            borderRadius: BorderRadius.all(
-                              Radius.circular(20),
-                            ))),
-                  ),
+                  textfieldpass(),
                   const SizedBox(
-                    height: 20,
-                  ),
-                  const SizedBox(
-                    height: 50,
+                    height: 70,
                   ),
                   SizedBox(
                     width: 330,
@@ -115,17 +83,17 @@ class LoginPage extends StatelessWidget {
                   ),
                   TextButton(
                     onPressed: () {},
-                    child: Text(
+                    child: const Text(
                       "New User ? Sign Up",
                       style: TextStyle(fontSize: 14, color: Colors.white),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 70,
                   ),
                   TextButton(
                     onPressed: () {},
-                    child: Text(
+                    child: const Text(
                       'Help ?',
                       style: TextStyle(color: Colors.white),
                     ),
