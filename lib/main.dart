@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsappagain/Screen/LoginPage.dart';
 import 'package:whatsappagain/Screen/chatscreen.dart';
 import 'package:whatsappagain/Screen/homescreen.dart';
 
@@ -11,6 +12,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     // throw UnimplementedError();
-    return MaterialApp(debugShowCheckedModeBanner: false, home: HomeScreen());
+    return MaterialApp(debugShowCheckedModeBanner: false, home: LoginPage());
   }
 }
