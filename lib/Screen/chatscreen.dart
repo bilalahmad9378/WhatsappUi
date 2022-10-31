@@ -11,29 +11,27 @@ class chatScreen extends StatelessWidget {
       home: Scaffold(
           appBar: AppBar(
             backgroundColor: Color(0xfff251B37),
-            leading: Row(
+            leading: InkWell(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => HomeScreen()));
+                },
+                child: Icon(
+                  Icons.arrow_back,
+                )),
+            leadingWidth: 20,
+            title: Row(
               children: [
-                InkWell(
-                    onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => HomeScreen()));
-                    },
-                    child: Icon(Icons.arrow_back)),
-                SizedBox(
-                  width: 10,
-                ),
                 CircleAvatar(
                   backgroundColor: Colors.white,
-                  radius: 20,
+                  radius: 17,
                   backgroundImage: NetworkImage(
                       'https://i.pinimg.com/originals/2e/2f/ac/2e2fac9d4a392456e511345021592dd2.jpg'),
                 ),
                 SizedBox(
                   width: 10,
                 ),
-                Text(' Area Willaim')
+                Text(' Area Willaim'),
               ],
             ),
             actions: [
